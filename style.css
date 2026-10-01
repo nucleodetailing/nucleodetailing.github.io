@@ -1,0 +1,509 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+/* Eliminamos los espacios que coloca el navegador
+   automáticamente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general de toda la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+header {
+    background-color: #111111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 6%;
+}
+
+
+/* Nombre de la empresa */
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo small {
+    color: #d4a72c;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Cambio de color cuando pasamos el mouse */
+nav a:hover {
+    color: #d4a72c;
+}
+
+
+/* Botón reservar */
+.boton-reserva {
+    background-color: #d4a72c;
+    color: #111111;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SECCIÓN PRINCIPAL
+   ===================================================== */
+
+.hero {
+    background-color: #111111;
+    color: white;
+
+    min-height: 600px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+    padding: 80px 8%;
+}
+
+
+/* Contenedor del texto */
+.hero-text {
+    max-width: 600px;
+}
+
+
+/* Frase */
+.frase {
+    color: #dddddd;
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Título principal */
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+/* Palabra destacada */
+.hero h1 span {
+    color: #d4a72c;
+}
+
+
+/* Descripción */
+.hero-text > p:last-of-type {
+    color: #cccccc;
+
+    margin-bottom: 30px;
+}
+
+
+/* Contenedor de botones */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* Estilo general de botones */
+.boton-principal,
+.boton-secundario {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Botón amarillo */
+.boton-principal {
+    background-color: #d4a72c;
+    color: #111111;
+}
+
+
+/* Botón transparente */
+.boton-secundario {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* Imagen principal */
+.hero-image img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   TÍTULOS DE LAS SECCIONES
+   ===================================================== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 span {
+    color: #d4a72c;
+}
+
+.section-title p {
+    color: #666666;
+}
+
+
+/* =====================================================
+   SECCIÓN SERVICIOS
+   ===================================================== */
+
+.servicios {
+    background-color: #ffffff;
+
+    padding: 90px 8%;
+}
+
+
+/* Contenedor de servicios */
+.servicios-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Tarjetas */
+.servicio-card {
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    overflow: hidden;
+}
+
+
+/* Imagen de cada servicio */
+.servicio-card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Texto de las tarjetas */
+.servicio-contenido {
+    padding: 25px;
+}
+
+.servicio-contenido h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.servicio-contenido p {
+    color: #666666;
+}
+
+
+/* =====================================================
+   DISEÑO PARA CELULAR
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Menú */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Inicio */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Botones */
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* Servicios */
+    .servicios-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ventajas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* Título */
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    /* Botones */
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    /* Servicios */
+    .servicios-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menú */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 10px;
+    }
+.ventajas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* =====================================================
+   SECCIÓN ¿POR QUÉ ELEGIR NÚCLEO DETAILING?
+   ===================================================== */
+
+.ventajas {
+    background-color: #f5f5f5;
+    padding: 90px 8%;
+}
+
+.ventajas-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.ventaja {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+.ventaja h3 {
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.ventaja p {
+    color: #666666;
+    line-height: 1.6;
+}
+/* =====================================================
+   SECCIÓN SOBRE NOSOTROS
+   ===================================================== */
+
+.nosotros {
+    background-color: #111111;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 60px;
+
+    padding: 90px 8%;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.nosotros-texto .section-title {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.nosotros-texto > p {
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.estadisticas {
+    display: flex;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.estadisticas div {
+    display: flex;
+    flex-direction: column;
+}
+
+.estadisticas strong {
+    color: #d4a72c;
+    font-size: 30px;
+}
+
+.estadisticas span {
+    color: #cccccc;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/* =====================================================
+   SECCIÓN AGENDA TU CITA
+   ===================================================== */
+
+.reserva {
+    background-color: #111111;
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 8%;
+}
+
+.reserva-texto {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.reserva h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.reserva h2 span {
+    color: #d4a72c;
+}
+
+.reserva p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+/* =====================================================
+   SECCIÓN CONTACTO
+   ===================================================== */
+
+.contacto {
+    background-color: #f5f5f5;
+    padding: 80px 8%;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.contacto-item {
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    text-align: center;
+}
+
+.contacto-item h3 {
+    color: #222222;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.contacto-item p {
+    color: #666666;
+    line-height: 1.5;
+}
+footer {
+    background-color: #111111;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
