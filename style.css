@@ -339,12 +339,51 @@ nav a:hover {
 
         gap: 10px;
     }
-.ventajas-container {
+/* Adaptación de las ventajas para celular */
+    .ventajas-container {
         grid-template-columns: 1fr;
     }
 
+    .ventaja {
+        padding: 20px;
+    }
+
+    /* Adaptación de la sección sobre nosotros */
+    .nosotros {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 50px 6%;
+    }
+
+    .nosotros-imagen img {
+        height: 280px;
+    }
+
+    .nosotros-texto .section-title {
+        text-align: center;
+    }
+
+    .estadisticas {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .estadisticas strong {
+        font-size: 24px;
+    }
+
+    /* Adaptación de contacto para celular */
     .contacto-container {
         grid-template-columns: 1fr;
+    }
+
+    .contacto {
+        padding: 50px 6%;
+    }
+
+    .contacto-item {
+        padding: 20px;
     }
 }
 /* =====================================================
