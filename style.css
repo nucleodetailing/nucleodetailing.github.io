@@ -312,12 +312,20 @@ nav a:hover {
     .contacto-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .nosotros {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .nosotros-imagen img {
+        height: 350px;
+    }
 }
 
 
 @media (max-width: 600px) {
 
-    /* Título */
+    /* Título principal */
     .hero h1 {
         font-size: 40px;
     }
@@ -336,53 +344,82 @@ nav a:hover {
     nav ul {
         flex-direction: column;
         align-items: center;
-
         gap: 10px;
     }
-/* Adaptación de las ventajas para celular */
+
+    /* ¿Por qué elegir Núcleo Detailing? */
+    .ventajas {
+        padding: 50px 6%;
+    }
+
     .ventajas-container {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .ventaja {
+        width: 100%;
         padding: 20px;
     }
 
-    /* Adaptación de la sección sobre nosotros */
+    /* Títulos de las secciones */
+    .section-title h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /* Sobre nosotros */
     .nosotros {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 50px 6%;
     }
 
+    .nosotros-imagen {
+        width: 100%;
+    }
+
     .nosotros-imagen img {
-        height: 280px;
+        width: 100%;
+        height: auto;
+    }
+
+    .nosotros-texto {
+        width: 100%;
+        min-width: 0;
     }
 
     .nosotros-texto .section-title {
         text-align: center;
     }
 
+    /* Estadísticas */
     .estadisticas {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
 
+    .estadisticas div {
+        text-align: center;
+    }
+
     .estadisticas strong {
         font-size: 24px;
     }
 
-    /* Adaptación de contacto para celular */
-    .contacto-container {
-        grid-template-columns: 1fr;
-    }
-
+    /* Contacto */
     .contacto {
         padding: 50px 6%;
     }
 
+    .contacto-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .contacto-item {
+        width: 100%;
         padding: 20px;
     }
 }
