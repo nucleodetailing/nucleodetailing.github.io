@@ -273,157 +273,6 @@ nav a:hover {
 
 
 /* =====================================================
-   DISEÑO PARA CELULAR
-   ===================================================== */
-
-@media (max-width: 900px) {
-
-    /* Encabezado */
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    /* Menú */
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* Inicio */
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    /* Botones */
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    /* Servicios */
-    .servicios-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .ventajas-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contacto-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .nosotros {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .nosotros-imagen img {
-        height: 350px;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    /* Título principal */
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    /* Botones */
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    /* Servicios */
-    .servicios-container {
-        grid-template-columns: 1fr;
-    }
-
-    /* Menú */
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    /* ¿Por qué elegir Núcleo Detailing? */
-    .ventajas {
-        padding: 50px 6%;
-    }
-
-    .ventajas-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .ventaja {
-        width: 100%;
-        padding: 20px;
-    }
-
-    /* Títulos de las secciones */
-    .section-title h2 {
-        font-size: 28px;
-        line-height: 1.2;
-    }
-
-    /* Sobre nosotros */
-    .nosotros {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 50px 6%;
-    }
-
-    .nosotros-imagen {
-        width: 100%;
-    }
-
-    .nosotros-imagen img {
-        width: 100%;
-        height: auto;
-    }
-
-    .nosotros-texto {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .nosotros-texto .section-title {
-        text-align: center;
-    }
-
-    /* Estadísticas */
-    .estadisticas {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .estadisticas div {
-        text-align: center;
-    }
-
-    .estadisticas strong {
-        font-size: 24px;
-    }
-
-    /* Contacto */
-    .contacto {
-        padding: 50px 6%;
-    }
-
-    .contacto-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .contacto-item {
-        width: 100%;
-        padding: 20px;
-    }
-}
-/* =====================================================
    SECCIÓN ¿POR QUÉ ELEGIR NÚCLEO DETAILING?
    ===================================================== */
 
@@ -582,4 +431,156 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
+}
+
+/* =====================================================
+   DISEÑO PARA CELULAR
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Menú */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Inicio */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Botones */
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* Servicios */
+    .servicios-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ventajas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nosotros {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .nosotros-imagen img {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* Título principal */
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    /* Botones */
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    /* Servicios */
+    .servicios-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menú */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* ¿Por qué elegir Núcleo Detailing? */
+    .ventajas {
+        padding: 50px 6%;
+    }
+
+    .ventajas-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ventaja {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Títulos de las secciones */
+    .section-title h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /* Sobre nosotros */
+    .nosotros {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 50px 6%;
+    }
+
+    .nosotros-imagen {
+        width: 100%;
+    }
+
+    .nosotros-imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nosotros-texto {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nosotros-texto .section-title {
+        text-align: center;
+    }
+
+    /* Estadísticas */
+    .estadisticas {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .estadisticas div {
+        text-align: center;
+    }
+
+    .estadisticas strong {
+        font-size: 24px;
+    }
+
+    /* Contacto */
+    .contacto {
+        padding: 50px 6%;
+    }
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contacto-item {
+        width: 100%;
+        padding: 20px;
+    }
 }
